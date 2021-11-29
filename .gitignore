@@ -24,3 +24,6 @@ hs_err_pid*
 /HeightConversionTool/nbproject/private/
 /HeightConversionTool/build/
 /WordCountTool/nbproject/private/
+/WordCountTool/dist/
+/WordCountTool/build/
+/JavaFXApplication2/nbproject/private/
