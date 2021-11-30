@@ -49,9 +49,15 @@ public class WordCount extends javax.swing.JFrame {
         lbl_Header.setText("Word Count Tool");
 
         btn_Count.setText("Count");
+        btn_Count.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_CountActionPerformed(evt);
+            }
+        });
 
         lbl_WordCount.setText("Word Count");
 
+        txt_Count.setEditable(false);
         txt_Count.setText("0");
 
         btn_Exit.setText("Exit");
@@ -144,6 +150,24 @@ public class WordCount extends javax.swing.JFrame {
         txtAr_Words.setText("");
         txt_Count.setText(String.valueOf(0));
     }//GEN-LAST:event_btn_ClearActionPerformed
+
+    private void btn_CountActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_CountActionPerformed
+        // TODO add your handling code here:
+        String sentence = txtAr_Words.getText();
+        int i=0,words=1;
+        for(i=0; i<sentence.length();i++){
+           if(sentence.charAt(i) == ' ')
+               words++;
+        }
+        if(words>1)
+            ;
+        else
+           words=0;
+        
+        txt_Count.setText(String.valueOf(words));
+        
+
+    }//GEN-LAST:event_btn_CountActionPerformed
 
     /**
      * @param args the command line arguments
