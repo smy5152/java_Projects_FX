@@ -98,7 +98,7 @@ public class Projects4to11 {
         find.findLargest();
         find.findSmallest();
 
-        */
+       
         
         //RANDOM NUMBER GENERATOR
         int max=50;
@@ -107,6 +107,7 @@ public class Projects4to11 {
         for (int i=0; i<10; i++){
             System.out.print(randomNum.nextInt(max)+" ");
         }
-        
+        System.out.println("");
+        */
     }
 }
